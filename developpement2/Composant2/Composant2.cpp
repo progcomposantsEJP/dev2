@@ -21,25 +21,28 @@ CComposant2::CComposant2()
 // Composant2.cpp : Defines the exported functions for the DLL application.
 //
 #include "stdafx.h"
-#include <vector>
 #include "Composant2.h"
+//#include "Composant6.h" - TODO
+//#include "Composant7.h" - TODO
 #include "Composant2Version.h"
-//#include <string>
+
 
 using namespace std;
+const double SPOT = 100;
 
 	Composant2::Composant2(){
 	};
 	double Composant2::doMonteCarlo(string typePayOff, double maturity, double strike, int nbIterations){
 		vector<double> vecteurPayOff(nbIterations);
 		double sumPayOff = 0;
-		double* vectorFromC6_tmp;
+		//double* vectorFromC6_tmp;
+		vector<double> vectorFromC6_tmp(maturity);
 		double payOff_tmp;
 		double esperancePayOff;
 
 		//Recuperation des n PayOff; soit n le nbIterations.
 		for (int i = 0; i < nbIterations; i++){
-			vectorFromC6_tmp = getPath();//Recuperation des 504 VA
+			vectorFromC6_tmp = getPath(maturity, SPOT);//Recuperation des 504 VA
 			payOff_tmp = pricePath(typePayOff, vectorFromC6_tmp, strike, maturity);//Alimentation du C7 par le tableau des 504 VA, puis recuperation du payOff associe en fonction du type d option traite (asiat, euro ect.)
 			vecteurPayOff.push_back(payOff_tmp);//Ajout du payOff dans le vecteur de PayOffs
 		}
@@ -61,10 +64,13 @@ using namespace std;
 		return esperancePayOff;
 	};
 
-	double* Composant2::getPath(){
-		//TODO : RÈcupÈrer un double* depuis le C6
-		double* path=NULL;
-		//path= fonction du C6 a appeler via DLL
+	//double* Composant2::getPath(){
+	vector<double> Composant2::getPath(double maturity, double spot){
+		//Recupere un vector depuis Composant6::getChemin(int jours, double spot)
+
+		vector<double> path(maturity);
+		//path = Composant6::getChemin(maturity, spot) - TODO
+
 		// EXCEPTION si une des valeur du tableau est manquante ou negative.
 		for (int z(0); z<sizeof(path); z++)
 		{
@@ -77,10 +83,13 @@ using namespace std;
 		return path;
 	};
 
-	double Composant2::pricePath(string typePayOff, double* vecteur, double strike, double maturity){
-		//TODO : RÈcupÈrer un double depuis le C7
+	double Composant2::pricePath(string typePayOff, vector<double> vecteur, double strike, double maturity){
+		//Recupere un double depuis Composant7::pricePath(String typePayOff, double path[], double strike, double maturity)
 		double priceOfPath = 0;
-		//priceOfPath = fonction du C7 a appeler via DLL
+
+		//Conversion du vector en double*
+		double* path = &vecteur[0];
+		//priceOfPath = Composant7::pricePath(typePayOff, path, strike, maturity); - TODO
 		
 		//EXCEPTION si la valeur retourne par C7 est manquante, negative ou > 1000000
 		if (priceOfPath == NULL)

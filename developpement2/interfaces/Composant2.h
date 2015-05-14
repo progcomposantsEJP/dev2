@@ -23,6 +23,7 @@ COMPOSANT2_API int fnComposant2(void);
 */
 
 #include <string>
+#include <vector>
 /*#define COMPOSANT2_VERSION 1,0,0,0
 #define COMPOSANT_VERSION_STR "1,0,0,0"*/
 
@@ -39,10 +40,10 @@ COMPOSANT2_API int fnComposant2(void);
 class Composant2{
 public:
 	COMPOSANT2_INTERFACE Composant2();//Constructeur
-	COMPOSANT2_INTERFACE double doMonteCarlo(std::string, double, double, int);
-	COMPOSANT2_INTERFACE double* getPath();
-	COMPOSANT2_INTERFACE double pricePath(std::string, double*, double, double);
-	COMPOSANT2_INTERFACE char * getComposant2Version(void);
+	/*static*/ COMPOSANT2_INTERFACE double doMonteCarlo(std::string, double, double, int);
+	/*static*/ COMPOSANT2_INTERFACE std::vector<double> getPath(double, double);
+	/*static*/ COMPOSANT2_INTERFACE double pricePath(std::string, std::vector<double>, double, double);
+	/*static*/ COMPOSANT2_INTERFACE char * getComposant2Version(void);
 private:
 
 #endif

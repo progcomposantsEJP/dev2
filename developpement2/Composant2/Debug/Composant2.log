@@ -1,14 +1,16 @@
-﻿Build started 02/05/2015 12:52:41.
+﻿Build started 14/05/2015 13:40:20.
 Project "\\vmware-host\Shared Folders\Documents\Visual Studio 2010\Projects\partageable\Composant2\Composant2.vcxproj" on node 2 (rebuild target(s)).
 _PrepareForClean:
   Deleting file "Debug\Composant2.lastbuildstate".
 InitializeBuildStatus:
-  Touching "Debug\Composant2.unsuccessfulbuild".
+  Creating "Debug\Composant2.unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"\\vmware-host\Shared Folders\Documents\Visual Studio 2010\Projects\partageable\interfaces" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D COMPOSANT2_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Composant2.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
   stdafx.cpp
   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"\\vmware-host\Shared Folders\Documents\Visual Studio 2010\Projects\partageable\interfaces" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D COMPOSANT2_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Composant2.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Composant2.cpp
   Composant2.cpp
+\\vmware-host\shared folders\documents\visual studio 2010\projects\partageable\composant2\composant2.cpp(39): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+\\vmware-host\shared folders\documents\visual studio 2010\projects\partageable\composant2\composant2.cpp(71): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"\\vmware-host\Shared Folders\Documents\Visual Studio 2010\Projects\partageable\interfaces" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D COMPOSANT2_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
   dllmain.cpp
 Link:
@@ -27,4 +29,4 @@ Done Building Project "\\vmware-host\Shared Folders\Documents\Visual Studio 2010
 
 Build succeeded.
 
-Time Elapsed 00:00:04.67
+Time Elapsed 00:00:04.78
