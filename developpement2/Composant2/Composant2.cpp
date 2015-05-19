@@ -20,11 +20,12 @@ CComposant2::CComposant2()
 */
 // Composant2.cpp : Defines the exported functions for the DLL application.
 //
+
 #include "stdafx.h"
 #include "Composant2.h"
-//#include "Composant6.h" - TODO
-//#include "Composant7.h" - TODO
-#include "Composant2Version.h"
+//#include "Composant6.h" 
+//#include "Composant7.h" 
+//#include "Composant2Version.h"
 
 
 using namespace std;
@@ -51,14 +52,15 @@ const double SPOT = 100;
 		for (vector<double>::iterator j = vecteurPayOff.begin(); j != vecteurPayOff.end(); ++j){
 			sumPayOff = sumPayOff + *j;
 		}
-
+		string s1= "NEGATIVE VALUE";
+		string s2= "MISSED VALUE";
 		esperancePayOff = sumPayOff / nbIterations;
 
 		//EXCEPTION si l esperance du payoff est manquante ou negative
 		if (esperancePayOff == NULL)
-			throw "MISSED VALUE";
+			throw s2;
 		else if (esperancePayOff < 0)
-			throw "NEGATIVE VALUE";
+			throw s1;
 
 		//Calcul de l'esperance : Somme PayOff / Nb PayOff
 		return esperancePayOff;
@@ -67,47 +69,47 @@ const double SPOT = 100;
 	//double* Composant2::getPath(){
 	vector<double> Composant2::getPath(double maturity, double spot){
 		//Recupere un vector depuis Composant6::getChemin(int jours, double spot)
-
+		string s1 = "MISSED DATA", s2 = "NEGATIVE VALUE";
 		vector<double> path(maturity);
-		//path = Composant6::getChemin(maturity, spot) - TODO
+		//path = getChemin(maturity, spot);
 
+		if(path.size()<maturity)
+			throw s1;
 		// EXCEPTION si une des valeur du tableau est manquante ou negative.
-		for (int z(0); z<sizeof(path); z++)
+		for (int z(0); z<path.size(); z++)
 		{
-			if (path[z] == NULL)
-				throw "MISSED DATA";
-			else if (path[z] < 0)
-				throw "NEGATIVE VALUE";
+			if (path[z] < 0)
+				throw s2;
 		}
-		
 		return path;
 	};
 
 	double Composant2::pricePath(string typePayOff, vector<double> vecteur, double strike, double maturity){
 		//Recupere un double depuis Composant7::pricePath(String typePayOff, double path[], double strike, double maturity)
 		double priceOfPath = 0;
-
 		//Conversion du vector en double*
 		double* path = &vecteur[0];
+		string error1="MISSED DATA", error2 = "NEGATIVE VALUE", error3 = "VALUE GREATER THAN 1000000";
+
 		//priceOfPath = Composant7::pricePath(typePayOff, path, strike, maturity); - TODO
-		
+		//priceOfPath = pricePath2(typePayOff, path, strike, maturity);
 		//EXCEPTION si la valeur retourne par C7 est manquante, negative ou > 1000000
 		if (priceOfPath == NULL)
-			throw "MISSED DATA";
+			throw error1;
 		else if (priceOfPath < 0)
-			throw "NEGATIVE VALUE";
+			throw error2;
 		else if (priceOfPath > 1000000)
-			throw "VALUE GREATER THAN 1000000";
+			throw error3;
 
 		return priceOfPath;
 	};
-
+	/*
 	char * Composant2::getComposant2Version()
 	{
 	return "Composant 2 version " COMPOSANT_VERSION_STR;
 	};
 
-
+	*/
 
 
 

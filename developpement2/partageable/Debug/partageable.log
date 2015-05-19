@@ -1,9 +1,9 @@
-﻿Build started 14/05/2015 13:40:25.
+﻿Build started 18/05/2015 17:14:36.
 Project "\\vmware-host\Shared Folders\Documents\Visual Studio 2010\Projects\partageable\partageable\partageable.vcxproj" on node 2 (rebuild target(s)).
 _PrepareForClean:
   Deleting file "Debug\partageable.lastbuildstate".
 InitializeBuildStatus:
-  Creating "Debug\partageable.unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Touching "Debug\partageable.unsuccessfulbuild".
 ClCompile:
   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"\\vmware-host\Shared Folders\Documents\Visual Studio 2010\Projects\partageable\interfaces" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D PARTAGEABLE_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\partageable.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
   stdafx.cpp
@@ -28,4 +28,4 @@ Done Building Project "\\vmware-host\Shared Folders\Documents\Visual Studio 2010
 
 Build succeeded.
 
-Time Elapsed 00:00:01.96
+Time Elapsed 00:00:03.76
