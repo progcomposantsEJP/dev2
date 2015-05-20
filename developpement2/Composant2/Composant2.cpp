@@ -53,7 +53,7 @@ const double SPOT = 100;
 			sumPayOff = sumPayOff + *j;
 		}
 		string s1= "NEGATIVE VALUE";
-		string s2= "MISSED VALUE";
+		string s2= "MISSED DATA";
 		esperancePayOff = sumPayOff / nbIterations;
 
 		//EXCEPTION si l esperance du payoff est manquante ou negative
