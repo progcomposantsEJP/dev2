@@ -57,9 +57,9 @@ const double SPOT = 100;
 		esperancePayOff = sumPayOff / nbIterations;
 
 		//EXCEPTION si l esperance du payoff est manquante ou negative
-		if (esperancePayOff == NULL)
+		if (esperancePayOff == NULL || typePayOff.empty() || maturity == NULL || strike == NULL || nbIterations == NULL)
 			throw s2;
-		else if (esperancePayOff < 0)
+		else if (esperancePayOff < 0 || maturity < 0 || strike < 0 || nbIterations < 0)
 			throw s1;
 
 		//Calcul de l'esperance : Somme PayOff / Nb PayOff
