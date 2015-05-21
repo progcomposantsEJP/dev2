@@ -42,7 +42,7 @@ public:
 	COMPOSANT2_INTERFACE Composant2();//Constructeur
 	/*static*/ COMPOSANT2_INTERFACE double doMonteCarlo(std::string, double, double, int);
 	/*static*/ COMPOSANT2_INTERFACE std::vector<double> getPath(double, double);
-	/*static*/ COMPOSANT2_INTERFACE double pricePath(std::string, std::vector<double>, double, double);
+	/*static*/ COMPOSANT2_INTERFACE double getPricePath(std::string, std::vector<double>, double, double);
 	/*static*/ COMPOSANT2_INTERFACE char * getComposant2Version(void);
 private:
 
