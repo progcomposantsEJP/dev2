@@ -1,0 +1,62 @@
+﻿La génération a démarré 21/05/2015 14:44:46.
+     1>Projet "C:\Users\lambda\Desktop\Composant4\Composant4\Composant4.vcxproj" sur le nœud 2 (rebuild cible(s)).
+     1>_PrepareForClean:
+         Suppression du fichier "Debug\Composant4.lastbuildstate".
+       InitializeBuildStatus:
+         Création de "Debug\Composant4.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D COMPOSANT4_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Composant4.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D COMPOSANT4_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Composant4.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Composant4.cpp
+         Composant4.cpp
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(64): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(65): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(101): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(104): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(105): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(107): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(108): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(114): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(149): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(151): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(154): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(172): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(174): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(179): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(188): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(200): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(269): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(277): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(284): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(299): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(303): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\lambda\desktop\composant4\composant4\composant4.cpp(307): warning C4018: '<' : incompatibilité signed/unsigned
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D COMPOSANT4_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Composant4.dll.embed.manifest.res" Debug\Composant4_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lambda\Desktop\Composant4\Debug\Composant4.dll" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\Composant4.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\lambda\Desktop\Composant4\Debug\Composant4.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\lambda\Desktop\Composant4\Debug\Composant4.lib" /MACHINE:X86 /DLL Debug\Composant4.dll.embed.manifest.res
+         Debug\Composant4.obj
+         Debug\dllmain.obj
+         Debug\stdafx.obj
+            Création de la bibliothèque C:\Users\lambda\Desktop\Composant4\Debug\Composant4.lib et de l'objet C:\Users\lambda\Desktop\Composant4\Debug\Composant4.exp
+       Manifest:
+         Suppression du fichier "Debug\Composant4.dll.embed.manifest".
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Composant4.dll.embed.manifest" /manifest Debug\Composant4.dll.intermediate.manifest "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Composant4.dll.embed.manifest.res" Debug\Composant4_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lambda\Desktop\Composant4\Debug\Composant4.dll" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\Composant4.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\lambda\Desktop\Composant4\Debug\Composant4.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\lambda\Desktop\Composant4\Debug\Composant4.lib" /MACHINE:X86 /DLL Debug\Composant4.dll.embed.manifest.res
+         Debug\Composant4.obj
+         Debug\dllmain.obj
+         Debug\stdafx.obj
+            Création de la bibliothèque C:\Users\lambda\Desktop\Composant4\Debug\Composant4.lib et de l'objet C:\Users\lambda\Desktop\Composant4\Debug\Composant4.exp
+         Composant4.vcxproj -> C:\Users\lambda\Desktop\Composant4\Debug\Composant4.dll
+       FinalizeBuildStatus:
+         Suppression du fichier "Debug\Composant4.unsuccessfulbuild".
+         Mise à jour de l'horodatage "Debug\Composant4.lastbuildstate".
+     1>Génération du projet "C:\Users\lambda\Desktop\Composant4\Composant4\Composant4.vcxproj" terminée (rebuild cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:02.14
